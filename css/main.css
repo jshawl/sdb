@@ -15,6 +15,7 @@ body {
 }
 .wrapper{
     width:90%;
+    max-width:1024px;
     margin:auto;
     position: relative;
 }
@@ -57,6 +58,20 @@ body {
     padding:10px;
 }
 
+h1{
+    font-weight: normal;
+    color:#1C1F54;
+}
+
+h2{
+    color:#9C4B15;
+}
+
+p{
+    color:#373737;
+}
+
+
 .clear{
     clear:both;
 }
@@ -96,12 +111,14 @@ header.top-header .member-log-in{
 .logo h1{
     font-size:1.5em;
     margin:0;
+    font-weight: bold;  
 }
 .logo h2{
     font-size: 1em;
     font-weight:normal;
     font-style: italic;
     margin:0;
+    color:#1c1d54;
 }
 
 header.top-header .site-search{
@@ -230,7 +247,7 @@ header.top-header .site-search button{
         }  
     }
 
-.main-content{
+.shadow-box{
     background:#fff;
     margin:1em 0;
     overflow: hidden;
@@ -292,14 +309,15 @@ header.top-header .site-search button{
 }
 
 .quick-links ul {
-    width:90%;
+    padding:0 20px 0 20px;
     margin: auto;
 }
 
 .quick-links li {
     border-bottom:2px solid #fff;
-    padding:1em;
+    padding:25px;
     color:#373737;
+    position: relative;
     font-size: .8em;
 }
 
@@ -325,6 +343,26 @@ header.top-header .site-search button{
     .quick-links h2 {
         font-family: 'Open Sans';
     }
+}
+
+.icon-microscope:before{
+    content:'';
+    display: block;
+    width:16px;
+    height:25px;
+    position: absolute;
+    background: url(../img/icon-microscope.jpg) no-repeat;
+    left:0;
+}
+
+.icon-money:before{
+    content:'';
+    display: block;
+    width:22px;
+    height:25px;
+    position: absolute;
+    background: url(../img/icon-money.png) no-repeat;
+    left:0;
 }
 
 footer{
@@ -359,4 +397,13 @@ footer .grid-1-3{
     footer .grid-1-3{
         text-align:left;  
     }
+}
+
+.header-img{
+    max-width:98%; /* save a littl room for the border */
+    padding:0px 4px 4px 4px;
+    background:#fff;
+    border-top:none;
+    display: block;
+    margin:auto;
 }
