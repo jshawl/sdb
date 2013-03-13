@@ -1,0 +1,134 @@
+/**
+ * main.css
+ * Author:  jesse  shawl
+ * URI:		      jshawl.com
+ * Contact: jesse@jshawl.com
+ * 
+ * Table of Contents:
+ * 		1. Base
+ 		2. Layout
+ 		3. Modules
+ 		4. State
+ 		5. Theme
+ 		6. Helpers
+ */
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background:#EEEEEE;
+}
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+.wrapper{
+    width:90%;
+    max-width:1024px;
+    margin:auto;
+    position: relative;
+}
+	.wrapper:after { /* always contain floats */
+		content: "."; 
+		visibility: hidden; 
+		display: block; 
+		height: 0; 
+		clear: both;
+	}
+	@media all and (max-width:30em){
+	    .wrapper{
+	        width:95%;
+	    }
+	}
+
+[class*=grid]{
+    float:left;
+}
+	[class*=grid] img{
+    	max-width:100%;
+	}
+.grid-1-3{
+    width:33.3%;
+}
+.grid-1-4{
+    width:25%;
+}
+.grid-2-3 {
+    width:66.6%;
+}
+.grid-3-4 {
+    width:75%;
+}
+	@media all and (max-width:50em){
+    	[class*=grid]{
+        	width:100%;
+    	}
+	}
+
+.module{ /* .module's are used inside the .grid classes for padding */
+    padding:10px;
+}
+
+.row{
+    clear:both;
+}
+
+/* ==========================================================================
+   Modules
+   ========================================================================== */
+
+/**
+ *  .nav--primary{} - <ul class='nav--primary'></nav>
+ *	Primary Nav - main nav across top of DOM
+ */
+
+.nav--primary {
+	background:#1C1F54;
+    border-bottom:4px solid #6D78B9;
+}
+	.nav--primary > li{
+
+	}
+
+/**
+ *  .nav--secondary{}
+ *	Secondary Nav - often found in :hover-induced dropdowns;
+ */
+
+/**
+ *  .nav--tertiary{}
+ *	Tertiary Nav - Child nav of .nav--secondary{} 
+ */
+
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+
+h1{
+    font-weight: normal;
+    color:#1C1F54; /* dark blue */
+}
+
+h2{
+    color:#9C4B15; /* rusty orange */
+}
+
+p{
+    color:#373737; /* darker grey */
+} 
+
+/* ==========================================================================
+   Helpers
+   ========================================================================== */
+
+.cf:after { /* clearfix */
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
