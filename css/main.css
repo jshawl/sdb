@@ -312,6 +312,9 @@ a {
  *	Tertiary Nav - Child nav of .nav--secondary{} 
  */
 
+.nav--tertiary{
+	padding-left:2em;
+}
 
 .masthead-img{
     max-width:98%; /* save a littl room for the border */
@@ -425,10 +428,12 @@ input[type='search'],
 
 /* dark blue */
 h1,
-.nav--secondary li:hover a,
-.quick-links h2{
+.nav--secondary li:hover > a,
+.nav--tertiary li:hover a,
+.quick-links h2 {
     color:#1C1F54; 
 }
+
 .dark {
   background:#1C1F54;
 }
@@ -452,7 +457,6 @@ header.top-header{
   color:#6D78B9; 
 }
 .pw-border{
-  background
   border-bottom:4px solid #6D78B9;
 }
 
@@ -460,6 +464,7 @@ header.top-header{
 /* rusty orange */
 h2,
 .nav--secondary li a,
+.nav--tertiary li a,
 .carousel__title, 
 .carousel__text, 
 .carousel__subtitle,
