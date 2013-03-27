@@ -297,6 +297,7 @@ a {
 .nav--secondary {
     width:auto;
 }
+
     .nav--secondary li a {
         display: block;
         font-weight: normal;
@@ -304,7 +305,7 @@ a {
         padding:.75em 1.5em;
         text-decoration: none;
     }
-    .nav--primary .nav--secondary li a {
+    .nav--primary .nav--secondary li {
         white-space: nowrap;
     }
 /**
