@@ -7,9 +7,14 @@ $('.nav--primary li').click(function(){
 });
 
 $('.cycle').cycle({ 
+	pager: '.carousel__nav',
+	pagerAnchorBuilder: function(idx, slide) {
+        // return sel string for existing anchor
+        return '.carousel__nav li:eq(' + (idx) + ') a';
+    },
     before:   function(){
-    	dataPosition = $(this).attr('data-position');
-    	$('[data-position]').removeClass('active');
-    	$('[data-position="'+dataPosition+'"]').addClass('active');
+    	dataPosition = $(this).attr('data-carousel-position');
+    	$('[data-carousel-position]').removeClass('active');
+    	$('[data-carousel-position="'+dataPosition+'"]').addClass('active');
     } 
  });
